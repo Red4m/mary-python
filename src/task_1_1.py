@@ -1,3 +1,3 @@
-a = float(input('Введите первое действительное число: '))
-b = float(input('Введите второе действительное число: '))
-print(f'Сумма: {a + b} \nРазность: {a - b} \nПроизведение: {a * b}')
+a = float(input('Enter the first real number: '))
+b = float(input('Enter the second real number: '))
+print(f'Sum: {a + b} \nDifference: {a - b} \nMultiplication: {a * b}')

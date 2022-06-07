@@ -1,6 +1,3 @@
 a = 3
 b = 4
-print(f'Гипотенуза: {(a**2 + b**2)**0.5} \nПлощадь треугольника: {0.5*a*b}')
-
-
-#почему нельзя так?   с = (a**2 + b**2)**0.5   NameError: name 'c' is not defined
+print(f'Hypotenuse: {(a**2 + b**2)**0.5} \nTriangle square: {0.5*a*b}')
