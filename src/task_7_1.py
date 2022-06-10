@@ -127,6 +127,21 @@ def entering_value ():
         value = input('Incorrect input. Enter a number in the range from 0 to 12: ')
     return value
 
+main_handler = {
+    1: inches_to_centimeters,
+    2: centimeters_to_inches,
+    3: miles_to_kilometers,
+    4: kilometers_to_miles,
+    5: pounds_to_kilograms,
+    6: kilograms_to_pounds,
+    7: ounces_to_grams,
+    8: grams_to_ounces,
+    9: gallons_to_liters,
+    10: liters_to_gallons,
+    11: pints_to_liters,
+    12: liters_to_pints,
+}
+
 
 while(True):
     operation = input("What units of measure do you want to convert?\n"
@@ -150,29 +165,6 @@ while(True):
             if 0 <= operation < 13:
                 break
         operation = input('Incorrect input. Enter a number in the range from 0 to 12: ')
-    if operation == 1:
-        inches_to_centimeters(entering_value())
-    elif operation == 2:
-        centimeters_to_inches(entering_value())
-    elif operation == 3:
-        miles_to_kilometers(entering_value())
-    elif operation == 4:
-        kilometers_to_miles(entering_value())
-    elif operation == 5:
-        pounds_to_kilograms(entering_value())
-    elif operation == 6:
-        kilograms_to_pounds(entering_value())
-    elif operation == 7:
-        ounces_to_grams(entering_value())
-    elif operation == 8:
-        grams_to_ounces(entering_value())
-    elif operation == 9:
-        gallons_to_liters(entering_value())
-    elif operation == 10:
-        liters_to_gallons(entering_value())
-    elif operation == 11:
-        pints_to_liters(entering_value())
-    elif operation == 12:
-        liters_to_pints(entering_value())
-    else:
+    if operation == 0:
         break
+    main_handler[operation](entering_value())
