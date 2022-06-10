@@ -18,8 +18,6 @@ for i in range(quantity):
         else:
             train[x] = input('Enter ' + str(x) + ': ')
     list_of_trains.append(train)
-for j in range(len(list_of_trains)):
-    print(train)
-    if train["departure time"] - train["arrival time"] > limit:
-        print(train)
-print(list_of_trains)
+for train in list_of_trains:
+    if (train["arrival time"].hour * 60 + train["arrival time"].minute) - (train["departure time"].hour * 60 + train["departure time"].minute) > (limit.hour * 60 + limit.minute):
+        print('Way time is more than 7 hours 20 minutes', train)
