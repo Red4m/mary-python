@@ -3,7 +3,11 @@
 справа налево. (Определить функцию, позволяющую распознавать слова
 палиндромы.)"""
 
-def palindrome(s):
+def palindrome(s: str) -> None:
+    """
+    Computes palindrome words
+    :param s: any sentence
+    """
     strings = s.split()
     for i in strings:
         new_word = i[::-1]

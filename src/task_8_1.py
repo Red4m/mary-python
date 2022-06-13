@@ -2,7 +2,11 @@
 1·3·5·...·n, если n — нечетное; n!! = 2·4·6·...·n, если n — четное (n > 0 —
 параметр целого типа. С помощью этой функции найти двойные
 факториалы пяти данных целых чисел"""
-def fact2 (n):
+def fact2(n: int) -> None:
+    """
+    Calculates the double factorial
+    :param n: int number
+    """
     fact = 1
     if n % 2 == 1:
         for i in range(1, n+1, 2):
