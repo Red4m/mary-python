@@ -14,7 +14,7 @@ def decorator(funk):
     def inner(*args: any) -> funk:
         """
         Change the queue of arguments
-        :param *args: any arguments
+        :param *args: arguments with different types
         :return: function with new queue of arguments
         """
         new_list = list(args)[::-1]
@@ -26,7 +26,7 @@ def decorator(funk):
 def my_list(*args: any) -> None:
     """
     Print all arguments
-    :param *args: tuple of arguments with different types
+    :param *args: arguments with different types
     """
     print(*args)
 

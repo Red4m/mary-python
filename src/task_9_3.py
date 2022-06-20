@@ -15,7 +15,7 @@ def decorator(funk):
     def inner(*args: int) -> funk:
         """
         Removes all even elements from the list
-        :param *args: tuple of int numbers
+        :param *args: int numbers
         :return: function with list of odd numbers
         """
         new_list = []
@@ -30,7 +30,7 @@ def decorator(funk):
 def my_list(*args: int) -> None:
     """
     Print numbers
-    :param *args: tuple of int numbers
+    :param *args: int numbers
     """
     print(*args)
 
