@@ -23,15 +23,14 @@ class Figure:
         self._x1 = args[0]._x
         self._y1 = args[0]._y
 
+    def __str__(self):
+        return self.__class__.__name__
+
 
 class Circle(Figure):
     def __init__(self, radius: int, *args: int):
         self._radius = radius
         super().__init__(*args)
-
-    @property
-    def __str__(self):
-        print('Circle-object')
 
     @property
     def square(self):
@@ -49,10 +48,6 @@ class Triangle(Figure):
         self._y2 = args[1]._y
         self._x3 = args[2]._x
         self._y3 = args[2]._y
-
-    @property
-    def __str__(self):
-        print('Triangle-object')
 
     @property
     def sides(self):
@@ -78,10 +73,6 @@ class Square(Figure):
         super().__init__(*args)
         self._x2 = args[1]._x
         self._y2 = args[1]._y
-
-    @property
-    def __str__(self):
-        print('Square-object')
 
     @property
     def side(self):

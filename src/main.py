@@ -10,7 +10,7 @@ square = Square(point1, point2)
 list_of_figures = [circle, triangle, square]
 
 for i in list_of_figures:
-    i.__str__
+    print(i)
     print('Perimeter ', i.perimeter)
     print('Square', i.square)
     print()
