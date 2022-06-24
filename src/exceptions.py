@@ -1,8 +1,7 @@
 def correct_number() -> int:
     while(True):
         try:
-            num = input('Enter number ')
-            num = int(num)
+            num = int(input('Enter number '))
             break
         except ValueError:
             print('Incorrect input, it should be int number. Try again.')
@@ -18,7 +17,7 @@ def correct_sign() -> str:
     while(True):
         try:
             sign = input('Enter +, -, *, / or "exit" ')
-            if sign == '+' or sign == '-' or sign == '*' or sign == '/' or sign == 'exit':
+            if sign in ["+", "-", "*", "/", "exit"]:
                 break
             else:
                 raise MyException

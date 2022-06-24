@@ -1,4 +1,4 @@
-from ui_func import Interface
+from ui_func import main
 
-start = Interface()
-start.main()
+if __name__ == '__main__':
+    main()
